@@ -1,0 +1,4 @@
+ChangeLog: 6/11/2020
+
+Animal Class:
+1. Move imgW1/A1/S1/D1 etc into constructor
