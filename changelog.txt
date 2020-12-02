@@ -1,4 +1,15 @@
-ChangeLog: 6/11/2020
+CHANGELOG 10/11/2020
+--------------------
 
 Animal Class:
-1. Move imgW1/A1/S1/D1 etc into constructor
+1. Change static final to private static final
+
+
+
+CHANGELOG: 6/11/2020
+--------------------
+
+Animal Class:
+0. Added comments to show constructor
+1. Move Image imgW1/A1/S1/D1 etc into constructor
+2. Made explicit values "static final" (movement, movementX, imgSize)
