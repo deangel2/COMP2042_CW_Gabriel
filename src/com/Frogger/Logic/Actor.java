@@ -1,4 +1,4 @@
-package p4_group_8_repo;
+package com.Frogger.Logic;
 
 import javafx.scene.image.ImageView;
 import javafx.scene.input.InputEvent;

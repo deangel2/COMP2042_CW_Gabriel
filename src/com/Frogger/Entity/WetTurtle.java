@@ -1,4 +1,6 @@
-package p4_group_8_repo;
+package com.Frogger.Entity;
+
+import com.Frogger.Logic.Actor;
 
 import javafx.scene.image.Image;
 
@@ -51,9 +53,9 @@ public class WetTurtle extends Actor{
 	
 	public void setTurtleImage(int w, int h)
 	{
-		turtle1 = new Image("file:src/p4_group_8_repo/TurtleAnimation1.png", w, h, true, true);
-		turtle2 = new Image("file:src/p4_group_8_repo/TurtleAnimation2Wet.png", w, h, true, true);
-		turtle3 = new Image("file:src/p4_group_8_repo/TurtleAnimation3Wet.png", w, h, true, true);
-		turtle4 = new Image("file:src/p4_group_8_repo/TurtleAnimation4Wet.png", w, h, true, true);
+		turtle1 = new Image("file:Resources/Entity/TurtleAnimation1.png", w, h, true, true);
+		turtle2 = new Image("file:Resources/Entity/TurtleAnimation2Wet.png", w, h, true, true);
+		turtle3 = new Image("file:Resources/Entity/TurtleAnimation3Wet.png", w, h, true, true);
+		turtle4 = new Image("file:Resources/Entity/TurtleAnimation4Wet.png", w, h, true, true);
 	}
 }

@@ -1,4 +1,4 @@
-package p4_group_8_repo;
+package com.Frogger.Logic;
 
 
 import java.util.ArrayList;

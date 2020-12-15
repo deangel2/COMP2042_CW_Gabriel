@@ -1,6 +1,9 @@
-package p4_group_8_repo;
+package com.Frogger.Logic;
 
 import java.util.ArrayList;
+
+import com.Frogger.Entity.Turtle;
+import com.Frogger.Entity.WetTurtle;
 
 import javafx.event.EventHandler;
 
@@ -144,13 +147,13 @@ public class Animal extends Actor {
 				carD++;
 			}
 			if (carD==1) {
-				setImage(new Image("file:Resources/Entity/cardeath1.png", imgSize, imgSize, true, true));
+				setImage(new Image("file:Resources/Player/cardeath1.png", imgSize, imgSize, true, true));
 			}
 			if (carD==2) {
-				setImage(new Image("file:Resources/Entity/cardeath2.png", imgSize, imgSize, true, true));
+				setImage(new Image("file:Resources/Player/cardeath2.png", imgSize, imgSize, true, true));
 			}
 			if (carD==3) {
-				setImage(new Image("file:Resources/Entity/cardeath3.png", imgSize, imgSize, true, true));
+				setImage(new Image("file:Resources/Player/cardeath3.png", imgSize, imgSize, true, true));
 			}
 			if (carD == 4) {
 				setX(300);
@@ -172,16 +175,16 @@ public class Animal extends Actor {
 				carD++;
 			}
 			if (carD==1) {
-				setImage(new Image("file:Resources/Entity/waterdeath1.png", imgSize,imgSize , true, true));
+				setImage(new Image("file:Resources/Player/waterdeath1.png", imgSize,imgSize , true, true));
 			}
 			if (carD==2) {
-				setImage(new Image("file:Resources/Entity/waterdeath2.png", imgSize,imgSize , true, true));
+				setImage(new Image("file:Resources/Player/waterdeath2.png", imgSize,imgSize , true, true));
 			}
 			if (carD==3) {
-				setImage(new Image("file:Resources/Entity/waterdeath3.png", imgSize,imgSize , true, true));
+				setImage(new Image("file:Resources/Player/waterdeath3.png", imgSize,imgSize , true, true));
 			}
 			if (carD == 4) {
-				setImage(new Image("file:Resources/Entity/waterdeath4.png", imgSize,imgSize , true, true));
+				setImage(new Image("file:Resources/Player/waterdeath4.png", imgSize,imgSize , true, true));
 			}
 			if (carD == 5) {
 				setX(300);

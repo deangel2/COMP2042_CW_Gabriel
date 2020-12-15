@@ -1,3 +1,43 @@
+CHANGELOG 15/12/2020
+--------------------
+Major Change:
+1. Removed ALL previous files in Repo
+2. Moved folders from Eclipse to Repo to work on packages
+
+Resources:
+1. Added Resources Source Folder
+2. Created "Entity", "Music", "Player", "World" in Resources
+3. Moved all images and music into respective categories
+
+src:
+1. Created com.Frogger.Entity/Logic/Main Packages
+2. Moved Main.java to com.Frogger.Main
+3. Moved Turtle.java and WetTurtle.java to com.Frogger.Entity
+4. Moved all other java files to com.Frogger.Logic
+
+Actor Class:
+1. Linked images to correct dir
+
+Digit Class:
+1. Linked images to correct dir
+
+End Class:
+1. Linked images to correct dir
+
+Main Class:
+1. Linked images to correct dir
+
+MyStage Class:
+1. Linked music to correct dir
+
+Turtle Class:
+1. Linked images to correct dir
+
+WetTurtle Class:
+1. Linked images to correct dir
+
+
+
 CHANGELOG 02/12/2020
 --------------------
 Main Class:
@@ -12,13 +52,13 @@ Aminal
 1. made setFrogImage method
 
 #Refactoring of World class was not sucessful
+#Made Code to reflect single responsibility SOLID idea
 
 CHANGELOG 10/11/2020
 --------------------
 
 Animal Class:
 1. Change static final to private static final
-
 
 
 CHANGELOG: 6/11/2020
