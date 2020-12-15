@@ -32,6 +32,7 @@ MyStage Class:
 
 Turtle Class:
 1. Linked images to correct dir
+2. Added turtleSetImage method
 
 WetTurtle Class:
 1. Linked images to correct dir
