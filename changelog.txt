@@ -1,3 +1,18 @@
+CHANGELOG 02/12/2020
+--------------------
+Main Class:
+0. Added comments to show "Stuff" in start method
+1. added addNewLog, addNewEntity, addNewObstacle to Main class
+
+WetTurtle
+1. made 900000000 private static final int
+2. made setTurtleImage method
+
+Aminal
+1. made setFrogImage method
+
+#Refactoring of World class was not sucessful
+
 CHANGELOG 10/11/2020
 --------------------
 
