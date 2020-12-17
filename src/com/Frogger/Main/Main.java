@@ -147,3 +147,6 @@ public class Main extends Application {
 		background.add(new Obstacle("file:Resources/Entity/car1Left.png", 500, 490, -5, 50, 50));
     }
 }
+
+
+//--module-path C:\Users\gabby\eclipse\java-2020-09\eclipse\dropins\javafx-sdk-11.0.2\lib --add-modules=ALL-MODULE-PATH
