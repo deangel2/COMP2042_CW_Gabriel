@@ -80,6 +80,9 @@ Examples are in Animal class where <i>movement</i>, <i>movementX</i>, and <i>img
 <hr>
 
 <h4>Other Materials</h4>
+<b>Changelog.txt</b>
+<p>Changelog contains changes made in a specific working date</p>
+<p></p>
 <b>Github Screenshot</b>
 <p>Screenshot of Github usage is included in <i>GitHub Use</i> Folder</p>
 <p></p>
