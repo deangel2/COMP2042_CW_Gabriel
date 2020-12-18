@@ -15,7 +15,12 @@ import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 
-
+/**
+ * Abstract world class
+ * 
+ * @author Gabriel
+ *
+ */
 public abstract class World extends Pane {
     private AnimationTimer timer;
     
@@ -78,20 +83,36 @@ public abstract class World extends Pane {
             }
         };
     }
-
+    
+    /**
+     * Start Timer
+     */
     public void start() {
     	createTimer();
         timer.start();
     }
 
+    /**
+     * Stop Timer
+     */
     public void stop() {
         timer.stop();
     }
     
+    /**
+     * Method to add entity into game
+     * 
+     * @param actor	entity to be added into game
+     */
     public void add(Actor actor) {
         getChildren().add(actor);
     }
 
+    /**
+     * Method to remove entity from game
+     * 
+     * @param actor entity to be removed from game
+     */
     public void remove(Actor actor) {
         getChildren().remove(actor);
     }

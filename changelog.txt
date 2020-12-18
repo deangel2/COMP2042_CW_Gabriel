@@ -1,3 +1,7 @@
+CHANGELOG 18/12/2020
+--------------------
+1) Added Javadocs into all classes
+
 CHANGELOG 15/12/2020
 --------------------
 Major Change:

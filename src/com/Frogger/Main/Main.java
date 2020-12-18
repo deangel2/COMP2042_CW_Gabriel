@@ -3,15 +3,15 @@ package com.Frogger.Main;
 import java.io.File;
 import java.util.List;
 
+import com.Frogger.Entity.Log;
+import com.Frogger.Entity.Obstacle;
 import com.Frogger.Entity.Turtle;
 import com.Frogger.Entity.WetTurtle;
 import com.Frogger.Logic.Animal;
 import com.Frogger.Logic.BackgroundImage;
 import com.Frogger.Logic.Digit;
 import com.Frogger.Logic.End;
-import com.Frogger.Logic.Log;
 import com.Frogger.Logic.MyStage;
-import com.Frogger.Logic.Obstacle;
 
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
@@ -24,16 +24,33 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
+/**
+ * Main Method used to start game of Frogger.
+ * <p>
+ * Includes initialisation of background, entities, player, and BGM
+ * 
+ * @author Gabriel
+ *
+ */
+
 public class Main extends Application {
 	AnimationTimer timer;
 	MyStage background;
 	Animal animal;
+	
+	/**
+	 * Main Method is unused when creating JavaFX Application
+	 * @param args Unused
+	 */
 	public static void main(String[] args) {
 		launch(args);
 	}
-
+	
+	/**
+	 * Method used to start Frogger Application, initialisation of entities
+	 */
 	@Override
-	public void start(Stage primaryStage) throws Exception {
+	public void start(Stage primaryStage){
 	    background = new MyStage();
 	    Scene scene  = new Scene(background,600,800);
 	
@@ -56,6 +73,15 @@ public class Main extends Application {
 		start();
 		
 	}
+	
+	/**
+	 * Method have 2 functions:
+	 * <p>
+	 * 1) To count points whilst playing
+	 * <p>
+	 * 2) To stop Background Music and show high score when game is over
+	 */
+	
 	public void createTimer() {
         timer = new AnimationTimer() {
             @Override
@@ -73,16 +99,27 @@ public class Main extends Application {
             }
         };
     }
+	
+	/**
+	 * Method to start BGM and start new timer instance
+	 */
+	
 	public void start() {
 		background.playMusic();
     	createTimer();
         timer.start();
     }
-
+	
+	/**
+	 * Method to stop timer
+	 */
     public void stop() {
         timer.stop();
     }
     
+    /**
+     * Method is to show high score to user once level ends
+     */
     public void showNewAlert()
     {
     	Alert alert = new Alert(AlertType.INFORMATION);
@@ -91,6 +128,13 @@ public class Main extends Application {
 		alert.setContentText("Highest Possible Score: 800");
 		alert.show();
     }
+    
+    /**
+     * Method to show high score in game
+     * 
+     * @param n This is score of user to be shown in game
+     */
+    
     public void setNumber(int n) {
     	int shift = 0;
     	while (n > 0) {
@@ -102,6 +146,9 @@ public class Main extends Application {
     		}
     }
     
+    /**
+     * Method to initialise new Log entity into game
+     */
     public void addNewLog()
     {
     	//Add New Log
@@ -116,6 +163,10 @@ public class Main extends Application {
     			
     }
     
+    
+    /**
+     * Method to initialise new Turtles and End Goal entities into game
+     */
     public void addNewEntity()
     {
     	//Add New Entity
@@ -132,6 +183,9 @@ public class Main extends Application {
     	background.add(new End(141 + 141-13+141-13+141-13+3,96));
     }
     
+    /**
+     * Method to initialise new Car and Truck obstacle into game
+     */
     public void addNewObstacle()
     {
     	//Add New Obstacle

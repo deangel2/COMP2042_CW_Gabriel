@@ -2,6 +2,8 @@ package com.Frogger.Logic;
 
 import java.util.ArrayList;
 
+import com.Frogger.Entity.Log;
+import com.Frogger.Entity.Obstacle;
 import com.Frogger.Entity.Turtle;
 import com.Frogger.Entity.WetTurtle;
 
@@ -11,6 +13,12 @@ import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 
+/**
+ * Animal class deals with initialization and movement of player
+ * 
+ * @author Gabriel
+ *
+ */
 
 public class Animal extends Actor {
 	Image imgW1;
@@ -25,9 +33,13 @@ public class Animal extends Actor {
 	int end = 0;
 	private boolean second = false;
 	boolean noMove = false;
-	private static final double movement = 13.3333333*2;
-	private static final double movementX = 10.666666*2;
-	private static final int imgSize = 40;
+	//The set value of translation of image on Y-Axis
+	static final double movement = 13.3333333*2;
+	//The set value of translation of image on X-Axis
+	static final double movementX = 10.666666*2;
+	//The set image size(px) to be used in game
+	static final int imgSize = 40;
+	
 	boolean carDeath = false;
 	boolean waterDeath = false;
 	boolean stop = false;
@@ -36,8 +48,15 @@ public class Animal extends Actor {
 	double w = 800;
 	ArrayList<End> inter = new ArrayList<End>();
 	
-	//constructor
-	//maybe can assign each image to individual var
+	/**
+	 * Class Animal constructor
+	 * <p>
+	 * Shows image of frogger on screen
+	 * <p>
+	 * Handles movement of frogger throughout game session
+	 * 
+	 * @param imageLink FilePath of image to be shown
+	 */
 	public Animal(String imageLink) {
 		setImage(new Image(imageLink, imgSize, imgSize, true, true));
 		setX(300);
@@ -131,7 +150,14 @@ public class Animal extends Actor {
 		});
 	}
 	
-	@Override
+	/**
+	 * Method act shows death animation in event where player dies,
+	 * <p>
+	 * changes player total score in event where player dies,
+	 * <p>
+	 * and also shows death animation for player
+	 */
+	
 	public void act(long now) {
 		int bounds = 0;
 		if (getY()<0 || getY()>734) {
@@ -246,14 +272,30 @@ public class Animal extends Actor {
 			//setY(679.8+movement);
 		}
 	}
+	
+	/**
+	 * Method to get of application is halted
+	 * 
+	 * @return True or False
+	 */
 	public boolean getStop() {
 		return end==5;
 	}
 	
+	/**
+	 * Method to obtain points of player from Animal class
+	 * 
+	 * @return Total score of player
+	 */
 	public int getPoints() {
 		return points;
 	}
 	
+	/**
+	 * Method to indicate to change score or not
+	 * 
+	 * @return True/False statement to initialise change of score
+	 */
 	public boolean changeScore() {
 		if (changeScore) {
 			changeScore = false;
@@ -263,6 +305,9 @@ public class Animal extends Actor {
 		
 	}
 	
+	/**
+	 * Method to set player image (Frogger)
+	 */
 	public void setFrogImage()
 	{
 		imgW1 = new Image("file:Resources/Player/froggerUp.png", imgSize, imgSize, true, true);
