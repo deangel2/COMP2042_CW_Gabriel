@@ -2,7 +2,7 @@
 
 #### Moved classes into dedicated packages (improve organisation)
 
-classes that was in 1 package originally was seperated into 3 deperate packages:
+classes that was in 1 package originally was seperated into 3 seperate packages:
 * Entity
 * Logic
 * Main
