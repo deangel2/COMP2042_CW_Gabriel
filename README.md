@@ -41,9 +41,9 @@ Examples are in Animal class where _movement_, _movementX_, and _imgSize_ are ma
 <p>
 <hr>
 <h4>Other Materials</h4>
-**Github Screenshot**
+<b>Github Screenshot</b>
 Screenshot of Github usage is included in _Github Use_ Folder
 <p>
-**Javadoc**
+<b>avadoc</b>
 To view Javadoc, open index.html in _javadoc_ folder
 
