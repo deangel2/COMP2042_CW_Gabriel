@@ -8,7 +8,7 @@
 <p>
 <li>Import FroggerCW into project</li>
 <p>
-<dd>Right click project, Click <i>Import</i>, Click <i>File System</i> under Generals tab, Click <i>next</i>, Click <i>browse</i>, Navigate to FroggerCW folder, Click on <i>FroggerCW</i>, Click <i>Select Folder</i>, Click <i>Select All</i>, Click <i>Finish</i>, Click <i>Yes to All</i></dd>
+<dd>Right click project, Click <i>Import</i>, Click <i>File System</i> under Generals tab, Click <i>next</i>, Click <i>browse</i>, Navigate to Extracted zip file, Click on <i>FroggerCW</i>, Click <i>Select Folder</i>, Click <i>Select All</i>, Click <i>Finish</i>, Click <i>Yes to All</i></dd>
 <p>
 <li>Right click project folder, under build path, Click <i>configure build path</i></li>
 <p>
